@@ -121,9 +121,6 @@ namespace SyncCheatSheet
         void Stop() => _stop = true;
     }
 
-    // ========================================================
-    // 6) SemaphoreSlim — LIMIT CONCURRENCY (IN-PROCESS)
-    // ========================================================
     class SemaphoreSlimExample
     {
         private readonly SemaphoreSlim _sem = new SemaphoreSlim(2, 2);
@@ -142,9 +139,6 @@ namespace SyncCheatSheet
         }
     }
 
-    // ========================================================
-    // 7) Semaphore — CROSS-PROCESS
-    // ========================================================
     class SemaphoreExample
     {
         void CrossProcess()
